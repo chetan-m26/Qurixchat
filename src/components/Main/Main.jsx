@@ -4,18 +4,23 @@ import { assets } from '../../assets/assets'
 import { Context } from '../../context/Context'
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 const recognition = SpeechRecognition ? new SpeechRecognition() : null;
+
 // 5 & 6 are mic speech input consts
 // line 103 to 124 from alt "mic" to 2 flower bracket(}})
 
 const Main = () => {
 
     const {onSent,recentPrompt,showResult,loading,resultData,setInput,input} = useContext(Context)
+
 // 13 to 16 line are popping user icon
+
     const [isPopped, setIsPopped] = React.useState(false);
     const togglePop = () => {
         setIsPopped(prev => !prev);
     };
+
 // 22 and 23 line from alt under "user" to center pop flower bracket close '}'
+
     return (
         <div className='Main'>
             <div className='nav'>
