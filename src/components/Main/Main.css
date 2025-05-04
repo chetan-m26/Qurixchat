@@ -58,7 +58,9 @@
 
 .Main .greet span{
     background: -webkit-linear-gradient(16deg,#4b90ff,#ff5546);
-    -webkit-background-clip: text;
+    background-clip: text;
+    /*-webkit-background-clip: text; THIS CAUSED YELLOW LINE IN CSS
+    SO I MADE (background-clip: text;)*/
     -webkit-text-fill-color: transparent;
 }
 
