@@ -177,7 +177,7 @@
 .l {
     font-weight: 360;
     font-size: 18px;
-    margin-left: 46px;
+    margin-left: 33px;
     color: black;
     opacity: 0;
     animation: pass 2s ease-in-out infinite;
@@ -251,7 +251,7 @@
     letter-spacing: 0.5em;
     text-shadow: 2px 2px 3px #919191;
   }
-  
+
   
   .d1 {
     color: black;
