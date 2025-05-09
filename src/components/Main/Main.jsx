@@ -78,11 +78,19 @@ const Main = () => {
                     <div className="result-data">
                         <img src={assets.gemini_icon} alt="" />
                         {loading
-                        ?<div className='loader'>
-                            <hr />
-                            <hr />
-                            <hr />
-                         </div> 
+                        ? 
+                        <div class="loader">
+                            <span class="l">L</span>
+                            <span class="o">o</span>
+                            <span class="a">a</span>
+                            <span class="d">d</span>
+                            <span class="i">i</span>
+                            <span class="n">n</span>
+                            <span class="g">g</span>
+                            <span class="d1">.</span>
+                            <span class="d2">.</span>
+                            <span class="d2">.</span>
+                        </div>
                         :<p dangerouslySetInnerHTML={{__html:resultData}}></p>
                         }
                         
