@@ -12,13 +12,13 @@ const Main = () => {
 
     const {onSent,recentPrompt,showResult,loading,resultData,setInput,input} = useContext(Context)
 
-/* 13 to 16 line are popping user icon
+// 13 to 16 line are popping user icon
 
     const [isPopped, setIsPopped] = React.useState(false);
     const togglePop = () => {
         setIsPopped(prev => !prev);
     };
-*/
+
 // 22 and 23 line from alt under "user" to center pop flower bracket close '}'
 
     return (
