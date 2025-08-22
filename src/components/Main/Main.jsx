@@ -79,17 +79,17 @@ const Main = () => {
                         <img src={assets.gemini_icon} alt="" />
                         {loading
                         ? 
-                        <div class="loader">
-                            <span class="l">L</span>
-                            <span class="o">o</span>
-                            <span class="a">a</span>
-                            <span class="d">d</span>
-                            <span class="i">i</span>
-                            <span class="n">n</span>
-                            <span class="g">g</span>
-                            <span class="d1">.</span>
-                            <span class="d2">.</span>
-                            <span class="d2">.</span>
+                        <div className="loader">
+                            <span className="l">L</span>
+                            <span className="o">o</span>
+                            <span className="a">a</span>
+                            <span className="d">d</span>
+                            <span className="i">i</span>
+                            <span className="n">n</span>
+                            <span className="g">g</span>
+                            <span className="d1">.</span>
+                            <span className="d2">.</span>
+                            <span className="d2">.</span>
                         </div>
                         :<p dangerouslySetInnerHTML={{__html:resultData}}></p>
                         }
@@ -98,7 +98,6 @@ const Main = () => {
                  </div>
                 }
 
-                
                 <div className="Main-bottom">
                     <div className="search-box">
                         <input onChange={(e)=>setInput(e.target.value)} value={input} type="text" placeholder='Ask Qchat' 
