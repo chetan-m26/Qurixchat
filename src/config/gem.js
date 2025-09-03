@@ -1,5 +1,27 @@
+/* below commented code is for updated web result here's content is shifted server.js file
+can runed by node server,js first */
 
-//AIzaSyDstnGjtNnhqM7t8-vLr7WO9RkbraF0Xgw
+/*async function run(prompt) {
+  try {
+    const res = await fetch(`http://localhost:5000/api/live-answer?q=${encodeURIComponent(prompt)}`);
+    const data = await res.json();
+
+    if (!data.answer) {
+      console.error("❌ No answer from backend:", data.error);
+      return "Sorry, I couldn’t get an answer.";
+    }
+
+    return data.answer;
+  } catch (err) {
+    console.error("❌ Error fetching from backend:", err);
+    return "Error connecting to the server.";
+  }
+}
+
+export default run;
+*/
+
+// below code is old one
 import {
     GoogleGenerativeAI,
     HarmCategory,
@@ -10,7 +32,7 @@ import {
   const genAI = new GoogleGenerativeAI(apiKey);
   
   const model = genAI.getGenerativeModel({
-    model: "gemini-1.5-pro-002",
+    model: "gemini-1.5-flash",
   });
   
   const generationConfig = {
